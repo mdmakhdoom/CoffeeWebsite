@@ -1,0 +1,53 @@
+//- index.pug
+doctype html
+html
+  head
+    title Coffee House
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+          div#logo
+            img(src="../static/img/logo.png") no repet, center center cover
+            | Coffee House
+            li #[a(href="/") Home]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info ]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div Stir and Brew
+        div.small the fresh Aroma of Coffee 
+    section#serveSection
+        h2 We Serve
+        div.card
+          h3 Hot Beverages
+          div.card-box
+            div.card-img
+              img(src="../static/img/ig 1.png")
+              div.card-content
+                p Wide range of Steaming coffees to make you fresh and light.
+        div.card
+          h3 Cold Beverages
+          div.card-box
+            div.card-img
+              img(src="../static/img/ig2.png")
+              div.card-content
+                p Creamy and forthy cold coffee to make you feel cool form inside.
+        div.card
+          h3 Special Combos
+          div.card-box
+            div.card-img
+              img(src="../static/img/ig3.png")
+              div.card-content
+                p Now it's really easy to chose your favorite eating and drinking combinations.
+    section#aboutSection
+        h1 About Us
+        div.content
+          h3 We, Coffee House situated at Malad West, Mumbai, Maharashtra, are one of the favourite hangout for coffee and conversations. We strive to provide the best experience to our guests. Our objective is to provide an authentic coffee drinking experience in a warm, friendly, no pressure environment. We try to bring relaxation to the city keeping into mind a cozy place that serves coffee, with couches to lounge in while you sip.
+    footer#footer
+       | © Copyrights 2019 - 2023 Coffee House || All Rights Reserved.
+    script
+      include ../static/index.js
